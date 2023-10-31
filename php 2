@@ -1,0 +1,51 @@
+<?php
+// Khai báo một lớp đối tượng
+class User {
+    private $name;
+    private $email;
+
+    public function __construct($name, $email) {
+        $this->name = $name;
+        $this->email = $email;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function getEmail() {
+        return $this->email;
+    }
+}
+
+// Sử dụng lớp User
+$user = new User("John Doe", "john@example.com");
+echo "Name: " . $user->getName() . "<br>";
+echo "Email: " . $user->getEmail() . "<br>";
+
+// Sử dụng hàm đệ quy để tính giai thừa
+function factorial($n) {
+    if ($n == 0) {
+        return 1;
+    } else {
+        return $n * factorial($n - 1);
+    }
+}
+
+echo "Factorial of 5 is " . factorial(5) . "<br>";
+
+// Sử dụng hàm xử lý chuỗi
+$string = "   Hello, this is a sample string.   ";
+echo "Original string: " . $string . "<br>";
+echo "Trimmed string: " . trim($string) . "<br>";
+echo "Reversed string: " . strrev($string) . "<br>";
+echo "Uppercase string: " . strtoupper($string) . "<br>";
+echo "Lowercase string: " . strtolower($string) . "<br>";
+
+// Sử dụng hàm xử lý mảng
+$numbers = array(2, 4, 6, 8, 10);
+echo "Sum of numbers: " . array_sum($numbers) . "<br>";
+echo "Maximum number: " . max($numbers) . "<br>";
+echo "Minimum number: " . min($numbers) . "<br>";
+
+?>
