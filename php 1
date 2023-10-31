@@ -1,0 +1,77 @@
+Mẹo #1: Comment về mọi hành động quan trọng là cực kỳ cần thiết
+
+
+Điều này không chỉ giúp dễ dàng xác định nhu cầu cụ thể của đoạn code đó mà còn làm cho chương trình gọn gàng, nhìn thấy phân tách rõ ràng.
+
+
+// Hàm kiểm tra đăng nhập
+if(!$user_login){
+  header("Location:https://niithanoi.edu.vn/");
+  die();
+} 
+
+
+Mẹo #2: Tránh sử dụng các cầu điều kiện không mong muốn
+
+
+Điều này không chỉ làm tăng thời gian thực thi mà còn làm cho code dài và phức tạp.
+
+
+Ví dụ:
+
+
+<?php
+if (condition1 == true){
+  // Code thỏa mãn điều kiện trên
+} else {
+  // Thực thi die(); hoặc exit();
+}
+?>
+
+
+
+
+echo và print
+PHP có 2 cách để xuất nội dung ra ngoài trình duyệt đó là: echo và print
+
+echo và print hầu như tương tự nhau, đều là phương pháp dùng để xuất nội dung ra ngoài trình duyệt.
+Khác nhau chính là:
+echo không trả về giá trị, và có thể chứa nhiều tham số.
+print trả về 1 giá trị, chỉ chưa 1 tham số.
+Về xử lý thì echo nhanh hơn print.
+Php viết:
+<?php
+echo "Hello echo!";
+?>
+Hello echo!
+
+Php viết:
+<?php
+print "Hello print!";
+?>
+Hello print!
+
+
+
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
